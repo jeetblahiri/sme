@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.DS_Store
+._*
+__MACOSX/
+
+# Public datasets are downloaded separately.
+midb/
+sleep_edf/
+mit-bih/
+cwru/
+uci_har/

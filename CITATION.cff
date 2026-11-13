@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Please cite the published article when using Spectral Moment Embedding."
+title: "Spectral Moment Embedding"
+type: software
+authors:
+  - family-names: Lahiri
+    given-names: Jeet Bandhu
+  - family-names: Panwar
+    given-names: Siddharth
+repository-code: "https://github.com/jeetblahiri/sme"
+url: "https://github.com/jeetblahiri/sme"
+keywords:
+  - covariance
+  - spectral moments
+  - multivariate time series
+  - signal classification
+preferred-citation:
+  type: article
+  title: "Spectral moment embedding: a matrix-moment generalisation of characteristic response analysis for covariance-based signal classification"
+  authors:
+    - family-names: Lahiri
+      given-names: Jeet Bandhu
+    - family-names: Panwar
+      given-names: Siddharth
+  journal: Scientific Reports
+  year: 2026
+  month: 11
+  day: 13
+  doi: "10.1038/s41598-026-67565-z"
+  url: "https://www.nature.com/articles/s41598-026-67565-z"
