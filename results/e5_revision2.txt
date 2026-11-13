@@ -1,0 +1,10 @@
+# e5_revision2 -- revision 2 baselines
+SME-combined p=5 [HGBT]           acc=0.8053 +/- 0.0229   F1=0.8018   CI=[0.7910, 0.8194]
+POCR/CRA [HGBT]                   acc=0.6199 +/- 0.0396   F1=0.6087   CI=[0.5942, 0.6445]
+SME-combined p=5                  acc=0.6024 +/- 0.0540   F1=0.5858   CI=[0.5684, 0.6371]
+POCR/CRA                          acc=0.6186 +/- 0.0345   F1=0.6037   CI=[0.5985, 0.6412]
+Raw vech-cov                      acc=0.6536 +/- 0.0401   F1=0.6345   CI=[0.6284, 0.6798]
+Log-Euclidean                     acc=0.8446 +/- 0.0378   F1=0.8459   CI=[0.8215, 0.8668]
+Tangent-space                     acc=0.8496 +/- 0.0342   F1=0.8512   CI=[0.8283, 0.8690]
+Riemannian MDM                    acc=0.6549 +/- 0.0494   F1=0.6541   CI=[0.6249, 0.6870]
+Poly-cov d=2                      acc=0.6607 +/- 0.0391   F1=0.6596   CI=[0.6357, 0.6861]

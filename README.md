@@ -9,6 +9,8 @@ their diagonal, upper-triangular or row-sum entries, without eigendecomposition.
 *Scientific Reports*, published 13 November 2026.
 [DOI: 10.1038/s41598-026-67565-z](https://doi.org/10.1038/s41598-026-67565-z)
 
+This repository includes the final Revision 2 code and cached experiment results.
+
 ## Install
 
 Use Python 3.10 or later.
@@ -58,6 +60,26 @@ faults and inertial activity recognition. Download the datasets separately:
 | E3: arrhythmia | [MIT-BIH](https://physionet.org/content/mitdb/1.0.0/) | `mit-bih/` |
 | E4: bearing faults | [CWRU](https://engineering.case.edu/bearingdatacenter) | `cwru/` |
 | E5: human activity | [UCI HAR v2.1](https://archive.ics.uci.edu/dataset/341/smartphone+based+recognition+of+human+activities+and+postural+transitions) | `uci_har/` |
+
+Place these folders in the repository root, then run:
+
+```bash
+python run_revision.py e2   # One grouped-validation experiment (e1 through e5)
+python run_revision.py all  # All five experiments and diagnostics
+```
+
+The runner writes to `results/`. Cached fold scores and confusion matrices in
+[`results/json/`](results/json/) retain their original Revision 2 filenames and
+can be inspected without downloading data. The older `run_all_experiments.py`
+runner preserves the original experiments; use `run_revision.py` for the revised
+benchmark. Results depend on the available dataset files and software versions.
+
+## Files
+
+- `sme_core.py`: SME projections, covariance estimation, POCR/CRA and core tests.
+- `sme_baselines.py`: covariance, Riemannian, polynomial and PSD baselines.
+- `run_revision.py`: revised experiments, diagnostics and summary plots.
+- `exp1_motor_imagery.py` through `exp5_har.py`: dataset loaders and original experiments.
 
 ## Citation
 
